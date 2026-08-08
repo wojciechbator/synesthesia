@@ -62,7 +62,7 @@ jobs:
         run: ./scripts/build-linux-release.sh
 
       - name: Upload Linux and Web artifacts
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: synesthesia-desktop-web-${{ github.sha }}
           path: |
@@ -125,7 +125,7 @@ jobs:
         run: ./scripts/build-android-apk.sh
 
       - name: Upload Android artifact
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: synesthesia-android-${{ github.sha }}
           path: |
